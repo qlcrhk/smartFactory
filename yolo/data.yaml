@@ -1,0 +1,12 @@
+train: dataset\train\images
+val: dataset\valid\images
+
+nc: 2
+names: ['circle', 'rectangle']
+
+roboflow:
+  workspace: kim-2qsdd
+  project: c-r-2
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/kim-2qsdd/c-r-2/dataset/1

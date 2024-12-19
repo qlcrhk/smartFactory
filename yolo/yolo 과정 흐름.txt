@@ -1,0 +1,11 @@
+yolo5pytorch
+
+적당한 양의 사진 준비
+(로보플로) 라벨링
+(코랩) 로보플로에서 다운받은 이미지,라벨,yaml 업로드후 학습 (best.pt 추출)
+(코랩에서 yaml파일 train/images, valid/images 경로 설정하기)
+(vscode) best.pt,yaml로 카메라로 인식시키기
+(vscode에서 yaml파일 train/images, valid/images 경로 설정하기)
+
+인식을 잘하지 못하면
+더 많은 양의 사진을 준비해서 반복하기
