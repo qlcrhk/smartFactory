@@ -46,7 +46,7 @@ halt -> 강제종료
 ------------------------------------------------------------
 
 시스템 상태 체크 명령어
-systemctl.start 프로그램명(ex. apach, mysql)
+systemctl start 프로그램명(ex. apach, mysql)
 	(restart)
 	(stop)
 	(status-상태체크)
