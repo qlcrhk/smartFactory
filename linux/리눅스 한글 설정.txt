@@ -1,0 +1,13 @@
+좌측 상단 라즈베리모양 - Preferences - Raspberry Pi Configuration - Localisation - Set Locale - Language(ko(korean))
+
+sudo su
+apt install fcitx fcitx-hangul
+gedit /etc/default/im-config (vim이면 gedit 대신 vim)
+-> IM-CONFIG_DEFAULT_MODE=fcitx
+
+im-config -a
+-> fcitx 바뀐거 확인
+
+apt install -y fonts-unfonts-core
+
+reboot

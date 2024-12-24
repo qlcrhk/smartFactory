@@ -1,0 +1,16 @@
+리눅스에서 github volov5 주소 검색
+sudo git clone github주소
+
+
+vscode 설치 실패
+vscode 설치 및 실행
+sudo dpkg -i vscodedev버전.deb -> (vscode deb 다운후 폴더에서 설치해도 됩니다.)
+code . -> 실행
+
+cv2 설치
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y python3-opencv
+
+cv2 설치 확인
+python3 -c "import cv2; print(cv2.__version__)"

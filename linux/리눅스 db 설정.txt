@@ -1,0 +1,4 @@
+mariadb 설치(mysql 대체)
+sudo apt install mariadb-server
+sudo mysql_secure_installation
+sudo mysql -u root -p
