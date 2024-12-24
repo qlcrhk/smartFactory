@@ -16,7 +16,8 @@ cd -> 경로 이동
 touch -> 파일 생성
 
 cat -> 파일 내용 보기(파일 열지않고)
-cat > test.txt -> test.txt 파일이 없으면 생성 후 내용 입력 가능, 파일이 이미 있으면 내용 입력 가능(내용 입력 후 crtl+d로 저장하고 나오기)
+sudo gedit test.py -> test.py gedit으로 파일 생성 및 편집
+sudo vim test.py -> test.py vim으로 파일 생성 및 편집
 
 mv -> 파일/폴더 이동, 이름 변경
 
@@ -29,7 +30,12 @@ rmdir -> 폴더 삭제(내부에 파일 존재 시 삭제 불가능)
 rm -> 파일/폴더 삭제(파일 있는 폴더 삭제시 옵션 -rf)
 
 grep -> 파일 찾을 때 사용(파일 안의 내용까지 검색)
+grep 'hello' test.py
+grep 'pring' test.py
+
 find  -> 파일 찾을 때 사용(crtl+f)
+find ./test/
+
 
 원격접속(통신에 사용 예정)
 ssh 사용자명(접솔할 컴퓨터)@접속할 ip주소
