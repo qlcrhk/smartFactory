@@ -2,10 +2,14 @@
 sudo git clone github주소
 
 
-vscode 설치 실패
+---vscode 설치 실패---
 vscode 설치 및 실행
 sudo dpkg -i vscodedev버전.deb -> (vscode deb 다운후 폴더에서 설치해도 됩니다.)
 code . -> 실행
+
+패키지/라이브러리 설치
+pip install flask
+
 
 cv2 설치
 sudo apt update
