@@ -1,1 +1,23 @@
+VNC를 이용한 원격접속 설정 및 사용
+1. VNC 서버 활성화(라즈베리파이)
+- 라즈베리파이 터미널
+sudo raspi-config
+2. interface options > vnc > 활성화
+3. 설정 저장 종료
+4. vnc 서버 확인
+sudo systemctl status vncserver-x11-serviced
+실행 중이면 [Active: running] 상태로 표시
+5. 라즈베리파이 ip 주소 확인
+hostname -I
 
+노트북에서 VNC클라이언트 설치
+1. Real|VNC Viewer 다운로드
+2. VNC Viewer 실행
+
+라즈베리파이 접속
+1. VNC Viewer에서 라즈베리파이  IP 주소 입력 
+(예: 192.168.1.10)
+2. 사용자 이름과 비밀번호 입력
+- 기본 사용자 이름: pi
+- 기본 비밀번호: raspberry (변경했을 경우 해당 비밀번호 입력)
+3. 접속 성공 후 라즈베리파이의 데스크톱 환경 사용 가능
