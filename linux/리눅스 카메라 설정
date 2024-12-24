@@ -1,1 +1,43 @@
+1. 카메라 활성화
+sudo raspi-config
+2. interface options > camera
+활성화
+3. sudo reboot
+4. 카메라 테스트
+4.1 카메라 미리보기
+libcamera-hello
+4.2 사진 촬영
+libcamera-jpeg -o test.jpg
+4.3 동영상 촬영
+libcamera-vid -t 10000 -0 test.h264
+(-t는 촬영 시간(밀리초). 위 명령은 10초 동안 녹화)
+5. python으로 프로그래밍
+5.1 라이브러리 설치
+sudo apt update
+sudo apt install -y python3-picamera2
+5.2 사진 촬영 코드
+from picamera2 import Picamera2
 
+# 카메라 초기화
+picam2 = Picamera2()
+picam2.start()
+
+# 사진 촬영
+picam2.capture_file("image.jpg")
+print("사진 촬영 완료: image.jpg")
+
+picam2.stop()
+5.3 동영상 촬영 코드
+from picamera2 import Picamera2
+import time
+
+# 카메라 초기화
+picam2 = Picamera2()
+video_config = picam2.create_video_configuration()
+picam2.configure(video_config)
+
+picam2.start_recording("video.h264")
+print("녹화 시작...")
+time.sleep(10)  # 10초 녹화
+picam2.stop_recording()
+print("녹화 완료: video.h264")
