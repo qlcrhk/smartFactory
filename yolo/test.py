@@ -3,7 +3,7 @@ import yaml
 from ultralytics import YOLO
 
 # 학습시킨 모델 로드
-model = YOLO('best.pt')  # 'yolov8n.pt', 'yolov8s.pt' 등 사용 가능
+model = YOLO('best.pt')  # 'yolov5n.pt', 'yolov5s.pt' 등 사용 가능
 
 # data.yaml 파일에서 클래스 정보 로드
 yaml_file_path = "data.yaml"
